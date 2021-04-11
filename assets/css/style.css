@@ -1,0 +1,150 @@
+/*---------- General Style ----------*/
+
+body{
+    font-family: roboto;
+}
+
+header a{
+    color: #3d90e3;
+}
+
+a, p, li {
+    color: #154e87;
+}
+
+#main_menu{
+    background-color: rgba(235, 235, 235, 0.9);
+    z-index: 1;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+section{
+    padding: 0 0 20px 0;
+}
+
+h1{
+    padding: 20px 0 20px 0;
+    font-family:pacifico;
+    color: #154e87;
+    text-align: center;
+}
+
+h2{
+    font-family:pacifico;
+    color: #154e87;
+    padding: 20px 0 20px 0;
+}
+
+footer{
+    background-color: #d3d3d3;
+    padding: 20px 0 20px 0;
+}
+
+footer a{
+    color: #3d90e3;
+}
+
+.margin-top-page{
+    margin-top: 85px;
+}
+
+.btn-primary{
+    background-color: #3d90e3 !important;
+}
+
+.btn-primary:hover{
+    background-color: #154e87 !important;
+}
+
+/*---------- Page Home ----------*/
+
+#presentation:target {
+    padding-top: 7em; 
+    margin-top: -7em; 
+}
+
+/*---------- Page All News ----------*/
+.archives{
+    background-color: lightsteelblue;
+}
+
+.cover{
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+}
+
+#news a{
+    text-decoration: none;
+}
+
+/*---------- Page a New One ----------*/
+
+.article{
+    background-color: lightsteelblue;
+    min-height: 200px;
+    padding: 15px;
+}
+
+/*---------- Page Programmation ----------*/
+
+.min_picture_prog img{
+    width: 100px;
+    height: 150px;
+}
+
+#programmation .row{
+    border-radius: 3px;
+    background-color: lightsteelblue;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+#programmation .row:hover{
+    background-color: rgba(176, 196, 222, 0.904);
+}
+
+/*---------- Page Sheet ----------*/
+
+.resume, .cast, .tech{
+    background-color: lightsteelblue;
+}
+
+.resume{
+    padding-left: 15px;
+}
+
+.cast{
+    margin-right: 5px;
+}
+
+.tech{
+    margin-left: 5px;
+}
+
+.registration_button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*---------- media queries ----------*/
+
+@media (max-width: 960px) {
+    #slider{
+        margin-top: 85px;
+    }
+
+    .cast{
+        margin-right: 0;
+    }
+
+    .tech{
+        margin-left: 0;
+    }
+}

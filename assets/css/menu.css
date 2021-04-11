@@ -1,0 +1,79 @@
+/* Responsive Navigation styles begin here */
+
+nav > input, .nav-button {
+  display: none; /* hidden on large screens */
+}
+@media (min-width: 961px) {
+  .nav-inner{
+      display: none;
+  }
+}
+
+/* small screens styles */
+@media (max-width: 960px) {
+ .nav-inner {
+   min-height: 100%;
+   width: 70vw;  
+   transform: translateX(-100%) translateZ(0);
+   transition: transform .2s;
+   will-change: transform;
+   z-index: 10;
+   background-color: #154e87;
+   position: fixed;
+   padding-top: 100px;
+  }
+  /* here's goes the slide effect */
+  input:checked ~ .nav-inner {
+    transform: translateX(0);
+  }
+  input:checked ~ .nav-button {  
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255)),
+                      linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255)),
+                      linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));  
+  }
+
+  /* Button deco */
+  .nav-button {
+    display: block;
+    position: fixed;
+    top: 1rem; left: 1rem;
+    z-index: 20;
+    height: 3.5rem; 
+    width: 3.5rem;
+    background-color: transparent;
+    background-image: linear-gradient(to right, #333, #333),
+                      linear-gradient(to right, #333, #333),
+                      linear-gradient(to right, #333, #333);
+    background-position: center top, center, center bottom;
+    background-repeat: no-repeat;
+    background-size: 3.5rem .9rem;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+  }
+}
+
+/* Global deco */
+
+#navigation{
+		display:flex;
+    flex-direction: column;
+}
+
+#navigation a {
+	display:flex;
+  padding: .7em;
+  text-decoration: none;
+}
+
+.nav-inner a {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.nav-inner a:hover {
+  color: #3d90e3;
+  font-size: 1.2em;
+}
